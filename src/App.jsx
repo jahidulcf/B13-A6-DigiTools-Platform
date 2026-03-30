@@ -1,13 +1,14 @@
 import './App.css'
+import Hero from './components/Hero'
+import Navbar from './components/Navbar'
 
 function App() {
 
   return (
     <>
-     <h1 className='text-3xl'>hello from react tailwind</h1>
-     <button className='btn'>
-      click
-     </button>
+      <Navbar />
+      <Hero />
+
     </>
   )
 }
