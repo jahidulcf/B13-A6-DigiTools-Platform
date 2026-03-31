@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes with ATS-friendly templates.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF"
+    ],
+    "icon": "design-tool"
+  },
+  {
+    "id": 2,
+    "name": "Portfolio Website Kit",
+    "description": "Build your personal portfolio website بسهولة.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best",
+    "features": [
+      "Responsive design",
+      "Custom domain support",
+      "SEO optimized"
+    ],
+    "icon": "operation"
+  },
+  {
+    "id": 3,
+    "name": "Job Tracker",
+    "description": "Track your job applications and interviews efficiently.",
+    "price": 9,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Application tracking",
+      "Interview reminders",
+      "Analytics dashboard"
+    ],
+    "icon": "portfolio"
+  },
+  {
+    "id": 4,
+    "name": "Cover Letter Generator",
+    "description": "Generate personalized cover letters instantly.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "AI-generated content",
+      "Multiple formats",
+      "Easy customization"
+    ],
+    "icon": "portfolio"
+  },
+  {
+    "id": 5,
+    "name": "LinkedIn Optimizer",
+    "description": "Improve your LinkedIn profile visibility and reach.",
+    "price": 29,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best",
+    "features": [
+      "Profile analysis",
+      "Keyword suggestions",
+      "Growth tips"
+    ],
+    "icon": "design-tool"
+  },
+  {
+    "id": 6,
+    "name": "Interview Prep Kit",
+    "description": "Practice interviews with common questions and answers.",
+    "price": 25,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Mock interviews",
+      "Answer suggestions",
+      "Performance feedback"
+    ],
+    "icon": "portfolio"
+  },
+  {
+    "id": 7,
+    "name": "Freelancer Toolkit",
+    "description": "All-in-one toolkit for freelancers to manage clients and projects.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Invoice generator",
+      "Client management",
+      "Project tracking"
+    ],
+    "icon": "portfolio"
+  },
+  {
+    "id": 8,
+    "name": "Skill Assessment Tests",
+    "description": "Test and showcase your professional skills.",
+    "price": 39,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best",
+    "features": [
+      "Multiple skill categories",
+      "Instant results",
+      "Certification"
+    ],
+    "icon": "portfolio"
+  }
+]
