@@ -20,5 +20,5 @@
 
 
 ## 
-- **GitHub Repository Link:** Comming soon 🚧
+- **GitHub Repository Link:** https://github.com/jahidulcf/B13-A6-DigiTools-Platform.git
 - **Live Site Link:** Comming soon 🚧
