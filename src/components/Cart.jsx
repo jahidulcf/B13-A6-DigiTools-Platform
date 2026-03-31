@@ -1,8 +1,35 @@
+import { Bounce, toast } from "react-toastify";
 
 const Cart = ({cart, setCart}) => {
 
     const removeFromCart = (id) => {
         setCart(cart.filter(item => item.id !== id))
+        toast('Item removed successfully', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+        });
+    }
+
+    const clearCart = () => {
+        setCart([])
+        toast.success('Checked out successfully', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+        });
     }
 
     const total = cart.reduce((acc, item) => acc + item.price, 0)
@@ -35,7 +62,10 @@ const Cart = ({cart, setCart}) => {
                             <p>Total: </p>
                             <p className="text-2xl font-bold">${total}</p>
                         </div>
-                        <button className="btn rounded-full btn-block bg-linear-to-r from-indigo-600 to-purple-600 text-white">Proceed to Checkout</button>
+                        <button 
+                            className="btn rounded-full btn-block bg-linear-to-r from-indigo-600 to-purple-600 text-white"
+                            onClick={clearCart}
+                        >Proceed to Checkout</button>
                     </div>
                 )
             }

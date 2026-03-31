@@ -37,7 +37,7 @@ const DigitalTools = ({productPromise, cart, setCart}) => {
                     name="my_tabs_6" 
                     className={`tab ${tab === "cart" ? selected : ""}`}
                     onClick={() => setTab("cart")}
-                    aria-label={`Cart(${cart.length})`} />
+                    aria-label={`Cart${cart.length > 0 ? `(${cart.length})` : ""}`} />
 
                 <div className="tab-content bg-base-100 border-base-300 mt-6 p-6">
                     <Cart cart={cart} setCart={setCart} />

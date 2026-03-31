@@ -9,6 +9,7 @@ import ProductCard from './components/ProductCard'
 import Stat from './components/Stat'
 import Steps from './components/Steps'
 import Workflow from './components/Workflow'
+import { ToastContainer } from 'react-toastify'
 
 const getProducts = async () => {
   const res = await fetch('/public/products.json')
@@ -30,6 +31,8 @@ function App() {
       <Pricing />
       <Workflow />
       <Footer />
+
+      <ToastContainer />
     </>
   )
 }

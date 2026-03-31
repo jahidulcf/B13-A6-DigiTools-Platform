@@ -1,7 +1,20 @@
+import { Bounce, toast } from "react-toastify";
 
 const ProductCard = ({product,cart, setCart}) => {
     const {name, description, price, period, tag, tagType, features, icon} = product
-    
+
+    const addedToCart = () => toast.success('Added to cart', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+    });
+
     const badge = (tagType) => {
         if (tagType === "popular") {
             return "badge-warning"
@@ -14,6 +27,10 @@ const ProductCard = ({product,cart, setCart}) => {
 
     const isInCart = () => {
         return cart.some(item => item.id === product.id)
+    }
+    const onAddedToCart = () => {
+        setCart([...cart, product])
+        addedToCart()
     }
     
     return (
@@ -44,7 +61,7 @@ const ProductCard = ({product,cart, setCart}) => {
                         <button
                             className={`btn btn-primary btn-block font-bold rounded-full  ${isInCart() ? "btn-disabled" : "bg-linear-to-r from-indigo-600 to-purple-600 text-white"}`}
                             disabled={isInCart()}
-                            onClick={() => setCart([...cart, product])}
+                            onClick={onAddedToCart}
                         >{isInCart() ? "Added to Cart" : "Buy now"}</button>
                     </div>
                 </div>
