@@ -3,7 +3,7 @@ const Workflow = () => {
     return (
         <div className="bg-linear-to-r from-indigo-600 to-purple-600 text-white py-30 space-y-10 text-center">
             <div className="flex flex-col items-center text-center gap-4">
-                <h2 className="text-5xl font-extrabold">Ready to Transform Your Workflow?</h2>
+                <h2 className="text-3xl font-extrabold md:text-5xl">Ready to Transform Your Workflow?</h2>
                 <p className="">Join thousands of professionals who are already using Digitools to work smarter.<br />Start your free trial today.</p>
             </div>
 

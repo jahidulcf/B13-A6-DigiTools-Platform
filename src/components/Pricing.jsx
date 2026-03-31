@@ -3,7 +3,7 @@ const Pricing = () => {
     return (
         <div className="my-30 space-y-10 container mx-auto">
             <div className="flex flex-col items-center text-center gap-4">
-                <h2 className="text-5xl font-extrabold text-gray-900">Simple, Transparent Pricing</h2>
+                <h2 className="text-3xl font-extrabold text-gray-900 md:text-5xl">Simple, Transparent Pricing</h2>
                 <p className="text-gray-500">Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
             </div>
 

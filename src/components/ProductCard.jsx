@@ -1,5 +1,5 @@
 
-const ProductCard = ({product}) => {
+const ProductCard = ({product,cart, setCart}) => {
     const {name, description, price, period, tag, tagType, features, icon} = product
     
     const badge = (tagType) => {
@@ -10,6 +10,10 @@ const ProductCard = ({product}) => {
         } else {
             return "badge-success"
         }
+    }
+
+    const isInCart = () => {
+        return cart.some(item => item.id === product.id)
     }
     
     return (
@@ -37,7 +41,11 @@ const ProductCard = ({product}) => {
                     </ul>
                     
                     <div className="mt-6">
-                        <button className="btn btn-primary btn-block font-bold rounded-full bg-linear-to-r from-indigo-600 to-purple-600 text-white">Buy now</button>
+                        <button
+                            className={`btn btn-primary btn-block font-bold rounded-full  ${isInCart() ? "btn-disabled" : "bg-linear-to-r from-indigo-600 to-purple-600 text-white"}`}
+                            disabled={isInCart()}
+                            onClick={() => setCart([...cart, product])}
+                        >{isInCart() ? "Added to Cart" : "Buy now"}</button>
                     </div>
                 </div>
             </div>

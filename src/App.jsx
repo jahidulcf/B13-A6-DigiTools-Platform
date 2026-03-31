@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './App.css'
 import DigitalTools from './components/DigitalTools'
 import Footer from './components/Footer'
@@ -16,18 +17,19 @@ const getProducts = async () => {
 
 const productPromise = getProducts()
 
-function App() {
+function App() {  
+  const [cart, setCart] = useState([])
 
   return (
     <>
-      {/* <Navbar />
+      <Navbar cart={cart}/>
       <Hero />
-      <Stat /> */}
-      <DigitalTools productPromise={productPromise}/>
-      {/* <Steps />
+      <Stat />
+      <DigitalTools productPromise={productPromise} cart={cart} setCart={setCart}/>
+      <Steps />
       <Pricing />
       <Workflow />
-      <Footer /> */}
+      <Footer />
     </>
   )
 }

@@ -4,7 +4,7 @@ const Hero = () => {
         <div className="hero py-16 container mx-auto">
             <div className="hero-content flex-col lg:flex-row gap-15">
                 <div>
-                    <h1 className="text-7xl font-bold test-gray-900">Super charge your digital workflow</h1>
+                    <h1 className="text-4xl font-bold test-gray-900 md:text-7xl">Super charge your digital workflow</h1>
                     <p className="text-lg py-6 text-gray-500">
                         Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today.<br/>Explore Products
                     </p>
