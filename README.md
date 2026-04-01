@@ -21,4 +21,4 @@
 
 ## 
 - **GitHub Repository Link:** https://github.com/jahidulcf/B13-A6-DigiTools-Platform.git
-- **Live Site Link:** Comming soon 🚧
+- **Live Site Link:** https://b13-a6-digi-tools-platform.vercel.app/
