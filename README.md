@@ -2,7 +2,7 @@
 
 
 ## Project name: DigiTools-Platform
-### Description: An online platform for digital tools in affordable price.
+### Description: A platform for digital tools subscription in one place
 
 
 ## ⚙️ Technologies Used
