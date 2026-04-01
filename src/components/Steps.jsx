@@ -1,3 +1,6 @@
+import user from '../assets/user.png'
+import productpack from '../assets/productpack.png'
+import rocket from '../assets/rocket.png'
 
 const Steps = () => {
     return (
@@ -11,7 +14,7 @@ const Steps = () => {
                 <div className="card h-95 bg-base-100 shadow-sm border border-gray-100 p-6 space-y-4 items-center text-center justify-center">
                     <span className="absolute text-sm font-bold top-4 right-4 rounded-full bg-linear-to-r from-indigo-600 to-purple-600 text-white w-10 h-10 flex justify-center items-center">01</span>
                     <div className="w-25 h-25 bg-purple-100 rounded-full flex justify-center items-center">
-                        <img src={'/src/assets/user.png'} alt="step-1"/>
+                        <img src={user} alt="step-1"/>
                     </div>
                     <h2 className="text-2xl font-bold text-gray-900">Create Account</h2>
                     <p className="text-gray-500">Sign up for free in seconds. No credit card required to get started.</p>
@@ -19,7 +22,7 @@ const Steps = () => {
                 <div className="card h-95 bg-base-100 shadow-sm border border-gray-100 p-6 space-y-4 items-center text-center justify-center">
                     <span className="absolute text-sm font-bold top-4 right-4 rounded-full bg-linear-to-r from-indigo-600 to-purple-600 text-white w-10 h-10 flex justify-center items-center">02</span>
                     <div className="w-25 h-25 bg-purple-100 rounded-full flex justify-center items-center">
-                        <img src={'/src/assets/package.png'} alt="step-1"/>
+                        <img src={productpack} alt="step-2"/>
                     </div>
                     <h2 className="text-2xl font-bold text-gray-900">Choose Products</h2>
                     <p className="text-gray-500">Browse our catalog and select the tools that fit your needs.</p>
@@ -27,7 +30,7 @@ const Steps = () => {
                 <div className="card h-95 bg-base-100 shadow-sm border border-gray-100 p-6 space-y-4 items-center text-center justify-center">        
                     <span className="absolute text-sm font-bold top-4 right-4 rounded-full bg-linear-to-r from-indigo-600 to-purple-600 text-white w-10 h-10 flex justify-center items-center">03</span>
                     <div className="w-25 h-25 bg-purple-100 rounded-full flex justify-center items-center">
-                        <img src={'/src/assets/rocket.png'} alt="step-1"/>
+                        <img src={rocket} alt="step-3"/>
                     </div>
                     <h2 className="text-2xl font-bold text-gray-900">Start Creating</h2>
                     <p className="text-gray-500">Download and start using your premium tools immediately.</p>

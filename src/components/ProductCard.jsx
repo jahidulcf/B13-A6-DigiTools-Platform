@@ -39,9 +39,8 @@ const ProductCard = ({product,cart, setCart}) => {
                 <div className="card-body">
                     <span className={`badge ${badge(tagType)} badge-soft ml-auto rounded-full`}>{tag}</span>
                     <span className="w-15 h-15 p-4 border rounded-full border-gray-200">                           
-                        <img src={`/src/assets/products/${icon}.png`} alt="design tool"/>
+                        <img src={`/products/${icon}.png`} alt={icon}/>
                     </span>
-
                     <div className="">
                         <h2 className="text-2xl font-bold text-gray-900">{name}</h2>
                         <p className="text-gray-500">{description}</p>

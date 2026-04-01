@@ -1,3 +1,5 @@
+import play from '../assets/Play.png'
+import banner from '../assets/banner.png'
 
 const Hero = () => {
     return (
@@ -12,14 +14,14 @@ const Hero = () => {
                         <a className="btn text-white rounded-full bg-linear-to-r from-indigo-600 to-purple-600 border border-transparent" href="#">Explore Products</a>
                         <button className="p-px rounded-full bg-linear-to-r from-indigo-600 to-purple-600" href="#">
                             <div className="btn bg-white rounded-full">
-                                <img src={'/src/assets/play.png'} alt="play icon"/>
+                                <img src={play} alt="play icon"/>
                                 <span className="bg-linear-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Watch Demo</span>
                             </div>
                         </button>
                     </div>
                 </div>
                 <img
-                src={'/src/assets/banner.png'}
+                src={banner}
                 className="rounded-lg shadow-2xl"
                 />
             </div>
